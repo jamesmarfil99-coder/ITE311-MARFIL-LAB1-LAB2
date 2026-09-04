@@ -8,7 +8,6 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-        // Linisin muna ang users table para maiwasan ang Duplicate Email Errors
         $this->db->table('users')->emptyTable();
 
         $data = [
@@ -18,6 +17,7 @@ class UserSeeder extends Seeder
                 'password'   => password_hash('admin123', PASSWORD_BCRYPT),
                 'role'       => 'admin',
                 'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
                 'name'       => 'Instructor User',
@@ -25,6 +25,7 @@ class UserSeeder extends Seeder
                 'password'   => password_hash('teacher123', PASSWORD_BCRYPT),
                 'role'       => 'instructor',
                 'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
                 'name'       => 'Student User',
@@ -32,6 +33,7 @@ class UserSeeder extends Seeder
                 'password'   => password_hash('student123', PASSWORD_BCRYPT),
                 'role'       => 'student',
                 'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ],
         ];
 

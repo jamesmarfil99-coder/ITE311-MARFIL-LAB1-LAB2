@@ -1,0 +1,88 @@
+ERROR - 2026-09-04 07:52:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_marfil', 3306, '', 0)
+#1 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#5 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#9 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 D:\APPS\Xamp\htdocs\ITE311-MARFIL\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#4 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#8 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 D:\APPS\Xamp\htdocs\ITE311-MARFIL\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-09-04 07:52:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: CLI, Route: db:seed/UserSeeder]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-09-04 07:53:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lms_marfil', 3306, '', 0)
+#1 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 D:\APPS\Xamp\htdocs\ITE311-MARFIL\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 D:\APPS\Xamp\htdocs\ITE311-MARFIL\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\APPS\Xamp\htdocs\ITE311-MARFIL\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-09-04 07:53:16 --> ErrorException: require(D:\APPS\Xamp\htdocs\ITE311-MARFIL\app\Views/errors/cli/error_exception.php): Failed to open stream: No such file or directory
+[Method: CLI, Route: migrate]
+in SYSTEMPATH\CLI\BaseCommand.php on line 133.
+ 1 SYSTEMPATH\CLI\BaseCommand.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(D:\\APPS\\Xamp\\htdocs\\ITE311-MARFIL\\app\\Views/errors/cli/error_exception.php): Failed to open stream: No such file or directory', 'D:\\APPS\\Xamp\\htdocs\\ITE311-MARFIL\\system\\CLI\\BaseCommand.php', 133)
+ 2 SYSTEMPATH\CLI\BaseCommand.php(133): require()
+ 3 SYSTEMPATH\Commands\Database\Migrate.php(104): CodeIgniter\CLI\BaseCommand->showError(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+ 4 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run([])
+ 5 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
