@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateLmsTables extends Migration
+class CreateUsersTable extends MigrationD:\APPS\Xamp\php\php.exe spark migrate:status
 {
     public function up()
     {
